@@ -1,0 +1,12 @@
+
+v1 = \Gamma \vdash t_1 : \tau_1 \s_{E_0} \tau_2 ! E_1
+v2 = \Gamma \vdash t_2 : /tau_1 ! E_2
+
+r = /Gamma \vdash t_1 t_2 : /tua_2 ! E_0\cup E_1 \cup E_2
+
+over
+
+
+v1 v2
+------
+r

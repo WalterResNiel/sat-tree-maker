@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{bussproofs}
+
+
+\def\PAX#1#2{\alwaysNoLine\AxiomC{$#1$} \UnaryInfC{$#2$}\alwaysSingleLine}
+
+\def\Judge{\downarrow}
+
+\def\r{\rightarrow}
+\def\ms{\r^*}
+
+\def\MS#1#2{\langle #1 \rangle \ms \langle #2\rangle}
+
+\def\SS#1#2{\langle #1 \rangle \rightarrow \langle #2\rangle}
+
+\def\sm{\rightarrow^*}
+\def\s{\rightarrow}
+
+\def\AX#1{\AxiomC{$#1$}}
+\def\UN#1{\UnaryInfC{$#1$}}
+\def\BI#1{\BinaryInfC{$#1$}}
+\def\TI#1{\TrinaryInfC{$#1$}}
+
+\def\LL#1{\LeftLabel{\textsc{#1}}}
+
+\def\brac#1{\langle#1\rangle}
+
+\def\E{\mathcal{E}}
+
+\def\T#1{\texttt{#1}}
+
+\def\a{\sigma}
+
+\def\skrt#1{\begin{prooftree}#1\end{prooftree}}
+
+
+\def\ex#1#2{\brac{#1}\Judge #2}
+\def\exsm#1#2{\brac{#1} \sm \brac{#2}}
+\def\exs#1#2{\brac{#1} \s \brac{#2}}
+
+\def\exb#1#2{\a \vdash #1 \s #2}
+\def\exbs#1#2{\a \vdash #1 \sm #2}
+
+\def\true{\T{true}}
+\def\false{\T{false}}
+
+
+\def\hook{\hat{\Gamma}}
+
+
+\makeatletter
+\renewcommand{\boxed}[1]{\text{\fboxsep=.2em\fbox{\m@th$\displaystyle#1$}}}
+\makeatother
+
+
+\begin{document}
+
+\skrt{
